@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SigninComponent } from './signin/signin.component';
 import { HotelComponent } from './hotel/hotel.component';
+import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HotelComponent } from './hotel/hotel.component';
     HomeComponent,
     SigninComponent,
     HotelComponent,
+    HotelDetailsComponent,
     
   ],
   imports: [

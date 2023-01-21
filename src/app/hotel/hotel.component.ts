@@ -1,4 +1,6 @@
 import { Component,OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { hotel } from '../data-type';
 import { HotelService } from '../service/hotel.service';
 
 @Component({
@@ -8,18 +10,21 @@ import { HotelService } from '../service/hotel.service';
 })
 export class HotelComponent implements OnInit {
 
-  public productlist:any;
+  // public productlist:any;
 
+  hotelList: undefined | hotel[];
+  // productMessage: undefined | string;
 
-  constructor(private api:HotelService){}
+  constructor(private api:HotelService,private route:ActivatedRoute){}
 
-  ngOnInit():void{
-    this.api.gethotel().subscribe(res=>{
-      // console.log(res);
-      this.productlist = res;
+  ngOnInit(): void {
+    this.api.hotelList().subscribe((res)=>{
+      console.warn(res);
+      if(res){
+        this.hotelList=res;
 
-    })
-
+      }
+    });
   }
 
 
