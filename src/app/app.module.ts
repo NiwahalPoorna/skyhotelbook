@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SigninComponent } from './signin/signin.component';
 import { HotelComponent } from './hotel/hotel.component';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
     SigninComponent,
     HotelComponent,
     HotelDetailsComponent,
+    NavbarComponent,
     
   ],
   imports: [

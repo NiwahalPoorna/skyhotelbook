@@ -21,10 +21,10 @@ export class HotelService {
 
 
   hotelList(){
-    return this.http.get<hotel[]>('http://localhost:3000/posts');
+    return this.http.get<hotel[]>('http://localhost:3000/hotels');
   }
   
   getvila(id:string){
-    return this.http.get<hotel>(`http://localhost:3000/posts/${id}`);
+    return this.http.get<hotel>(`http://localhost:3000/hotels/single/${id}`);
   }
 }
