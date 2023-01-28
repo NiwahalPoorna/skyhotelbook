@@ -16,9 +16,9 @@ export class HotelDetailsComponent {
 
 
   ngOnInit(): void {
-    let productId=this.route.snapshot.paramMap.get('id');
+    let productId=this.route.snapshot.paramMap.get('_id');
     console.warn(productId); 
-    productId && this.hotel.getvila(productId).subscribe((res)=>{
+    productId && this.hotel.gethotel(productId).subscribe((res)=>{
       console.warn(res);
       this.hotelData=res;
     })

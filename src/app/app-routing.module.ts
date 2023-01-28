@@ -6,14 +6,18 @@ import { SigninComponent } from './signin/signin.component';
 import { HotelComponent } from './hotel/hotel.component';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 const routes: Routes = [
   {path:'',redirectTo:'signin',pathMatch:'full'},
   {path:"signup",component:SignupComponent},
   {path:"home",component:HomeComponent},
   {path:"signin",component:SigninComponent},
   {path:"hotel",component:HotelComponent},
-  {path:"hoteldetails/:id",component:HotelDetailsComponent},
+  {path:"hoteldetails/:_id",component:HotelDetailsComponent},
   {path:"navbar",component:NavbarComponent},
+  {path:"footer",component:FooterComponent},
+  {path:"aboutus",component:AboutusComponent},
 ];
 
 @NgModule({

@@ -48,3 +48,10 @@ body,a, div {
   
   @media (min-width: 1200px) {}
   
+.btn-profile{
+    border: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px !important;
+      font-weight: 300 !important;
+      background-color: white;
+  }

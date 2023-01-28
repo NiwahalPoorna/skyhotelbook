@@ -39,7 +39,7 @@ export class SigninComponent implements OnInit{
         if (user) {
           alert('Login Success');
           this.loginForm.reset();
-          this.router.navigate(['hotel']);
+          this.router.navigate(['home']);
           console.log(res);
         } else {
           alert('user not found');

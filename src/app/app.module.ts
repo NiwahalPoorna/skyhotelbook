@@ -12,6 +12,11 @@ import { SigninComponent } from './signin/signin.component';
 import { HotelComponent } from './hotel/hotel.component';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './footer/footer.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+
+
 
 @NgModule({
   declarations: [
@@ -22,6 +27,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     HotelComponent,
     HotelDetailsComponent,
     NavbarComponent,
+    FooterComponent,
+    AboutusComponent,
     
   ],
   imports: [
@@ -30,6 +37,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    NgbDropdownModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

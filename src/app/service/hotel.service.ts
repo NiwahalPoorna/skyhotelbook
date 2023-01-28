@@ -24,7 +24,7 @@ export class HotelService {
     return this.http.get<hotel[]>('http://localhost:3000/hotels');
   }
   
-  getvila(id:string){
-    return this.http.get<hotel>(`http://localhost:3000/hotels/single/${id}`);
+  gethotel(_id:string){
+    return this.http.get<hotel>(`http://localhost:3000/hotels/${_id}`);
   }
 }
