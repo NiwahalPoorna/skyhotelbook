@@ -15,6 +15,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { BookingComponent } from './booking/booking.component';
+
+
+
 
 
 
@@ -29,6 +33,10 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     NavbarComponent,
     FooterComponent,
     AboutusComponent,
+    BookingComponent,
+
+
+   
     
   ],
   imports: [
@@ -38,6 +46,11 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     ReactiveFormsModule,
     HttpClientModule,
     NgbDropdownModule,
+    
+  
+
+ 
+   
    
   ],
   providers: [],

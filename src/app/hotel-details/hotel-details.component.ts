@@ -10,6 +10,8 @@ import { HotelService } from '../service/hotel.service';
 })
 export class HotelDetailsComponent {
 
+  selected: any;
+
   hotelData:undefined|hotel;
 
   constructor(private route:ActivatedRoute , private hotel:HotelService){ }
